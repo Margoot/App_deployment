@@ -1,0 +1,47 @@
+---
+
+- name: download get-pip.py
+  get_url: url={{url_get_pip.src}} dest={{url_get_pip.dest}} 
+    
+- name: install pip
+  command: python {{pip_dir}}
+    
+- name: install flask
+  pip: name=flask
+
+- name: create app folder
+  file: >
+      path={{ app.app_dir }}
+      mode=0755
+      state=directory
+
+- name: copy app file to host
+  copy: src=__init__.py dest={{ app.hello_world_dir }}
+
+- name: create templates folder 
+  file: > 
+    path={{app.html_dir}}
+    mode=0755
+    state=directory
+
+- name: render html template
+  template: 
+    src='hello.html'
+    dest={{app.html_dir}}
+    mode=0755
+
+- name: create static folder 
+  file: > 
+    path={{app.css_dir}}
+    mode=0755
+    state=directory
+
+- name: render stylesheet template
+  template: 
+    src='style.css'
+    dest={{app.css_dir}}
+    mode=0755
+    
+- name: run server
+  command: gunicorn app:app -D -b {{server_ip}} chdir=~/
+...

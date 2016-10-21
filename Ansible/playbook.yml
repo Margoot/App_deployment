@@ -1,0 +1,13 @@
+--- 
+- hosts: all
+  remote_user: root
+  sudo: yes
+
+  roles:
+    - sqlite
+    - nginx
+    - gunicorn
+    - supervisord
+    - app
+    
+...

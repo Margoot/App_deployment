@@ -1,0 +1,16 @@
+---
+url_get_pip:
+  src: https://bootstrap.pypa.io/get-pip.py
+  dest: /tmp/get-pip.py
+
+server_ip: 0.0.0.0:5000
+pip_dir: /tmp/get-pip.py
+
+app:
+  install_dir: /home/vagrant/__init__.py
+  app_dir: /etc/app/
+  hello_world_dir: /etc/app/__init__.py
+  css_dir: /etc/app/static/styles/
+  html_dir: /etc/app/templates/
+
+...

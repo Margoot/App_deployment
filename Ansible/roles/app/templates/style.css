@@ -1,0 +1,33 @@
+
+h1 {
+	color: #75C9BB;
+	font-family: 'Fjalla One';
+	font-size: 32px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	line-height: 72px;
+	margin-bottom: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p {
+	color: #42393B;
+	font-family: 'PT Serif';
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 48px;
+	margin: 0 auto 24px;
+	text-align: center;
+	width: 100%;
+}
+
+a {
+	color: #E0792B;	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+}
+
+a:hover {
+	color: #42393B;
+}
