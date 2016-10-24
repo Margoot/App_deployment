@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/Margot/Desktop/supersnake/Vagrant","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}},"virtualbox":{"/supersnake":{"guestpath":"/supersnake","hostpath":"/Users/Margot/Desktop/supersnake","disabled":false,"__vagrantfile":true}}}

@@ -44,4 +44,13 @@
     
 - name: run server
   command: gunicorn app:app -D -b {{server_ip}} chdir=~/
+
+- name: print message
+  command: echo "Let's go to http://localhost:5000/ to see my app !"
+  register: open
+
+- debug: msg="{{ open.stdout }}"
+
+- name: open python app
+  command: python {{app.hello_world_dir}}
 ...
