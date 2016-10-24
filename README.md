@@ -1,6 +1,6 @@
 # TP DEVOPS - App Deployment
 
-## PROJECT
+## Project
 
 Creation of a simple web application and deployment using Vagrant, Ansible and Flask. 
 
