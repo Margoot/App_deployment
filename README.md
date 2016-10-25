@@ -2,14 +2,14 @@
 
 ## Project
 
-Creation of a simple web application and deployment using Vagrant, Ansible and Flask. 
+Creation of a simple web application and deployment using Vagrant, Ansible and Flask.
 
 
 ## Installation 
 
 * Download VirtualBox
 * Download Vagrant 
-* install Ansible : 
+* Install Ansible : 
 ```
 apt-get install ansible (linux)
 brew install ansible (macOS) 
@@ -20,17 +20,26 @@ apt-get install git (linux)
 brew install git (macOS)
 ```
 
+## Roles installed 
+
+* Sqlite
+* Nginx
+* Gunicorn
+* Supervisord
+
 
 ## Usage 
 
-1. Place in the Vagrant file (supersnake/Vagrant) 
-2. Execute the command : ``` vagrant up —provision ```
-3. Go to this url to see my flask app deployed : [http://localhost:5000/](http://localhost:5000/)
+1. Clone git repository
+2. Place yourself in the Vagrant file (supersnake/Vagrant) 
+3. Execute the command : ``` vagrant up —provision ```
+4. Go to this url to see my flask app deployed : [http://localhost:5000/](http://localhost:5000/)
 
 
 ## Author Information
 
 Margot LE ROUZIC 
+Ingé 3C
 
 
 
