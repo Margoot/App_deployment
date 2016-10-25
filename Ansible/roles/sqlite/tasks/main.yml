@@ -25,6 +25,6 @@
       name={{ sqlite_dir }}/{{ item }}
       owner={{ ansible_user_id }}
       group={{ ansible_user_id }}
-      mode=0644
-      state=file
+      mode=0755
+      state=touch
   with_items: "{{sqlite_dbs}}"

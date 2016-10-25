@@ -8,9 +8,8 @@ pip_dir: /tmp/get-pip.py
 server_ip: 0.0.0.0:5000
 
 app:
-  app_dir: /home/vagrant/app/
-  hello_world_dir: /home/vagrant/app/__init__.py
-  css_dir: /home/vagrant/app/static/styles/
-  html_dir: /home/vagrant/app/templates/
-
+  app_dir: /var/www/app/
+  hello_world_dir: /var/www/app/__init__.py
+  css_dir: /var/www/app/static/styles/
+  html_dir: /var/www/app/templates/
 ...

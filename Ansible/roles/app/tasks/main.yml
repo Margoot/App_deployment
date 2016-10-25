@@ -14,7 +14,6 @@
       path={{ app.app_dir }}
       mode=0755
       state=directory
-
 - name: copy app file to host
   copy: src=__init__.py dest={{ app.hello_world_dir }}
 
@@ -23,7 +22,6 @@
     path={{app.html_dir}}
     mode=0755
     state=directory
-
 - name: render html template
   template: 
     src='hello.html'
@@ -35,7 +33,6 @@
     path={{app.css_dir}}
     mode=0755
     state=directory
-
 - name: render stylesheet template
   template: 
     src='style.css'
