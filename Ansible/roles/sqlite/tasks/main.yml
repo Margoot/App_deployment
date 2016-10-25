@@ -4,12 +4,12 @@
 
 - name: Install RedHat sqlite package
   yum: name={{ item }} state=installed
-  with_items: sqlite_pkg
+  with_items: "{{sqlite_pkg}}"
   when: ansible_os_family == 'RedHat'
 
 - name: Install Debian sqlite package
   apt: name={{ item }} state=installed update_cache=yes
-  with_items: sqlite_pkg
+  with_items: "{{sqlite_pkg}}"
   when: ansible_os_family == 'Debian'
 
 - name: Create sqlite directory.
@@ -27,4 +27,4 @@
       group={{ ansible_user_id }}
       mode=0644
       state=file
-  with_items: sqlite_dbs
+  with_items: "{{sqlite_dbs}}"
